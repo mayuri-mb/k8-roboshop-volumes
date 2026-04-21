@@ -49,14 +49,14 @@ spec:
             tcpSocket:
               port: 8080
             failureThreshold: 5
-            periodSeconds: 10
+            periodSeconds: 20
             initialDelaySeconds: 20
           livenessProbe:
             httpGet:
               path: /health
               port: 8080
             failureThreshold: 5
-            periodSeconds: 10
+            periodSeconds: 20
           envFrom:
             - configMapRef:
                 name: catalogue  
