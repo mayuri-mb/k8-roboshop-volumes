@@ -48,7 +48,7 @@ spec:
           image: mayurim334/mongodb:1.5.0
           volumeMounts:
             - name: mongodb
-              path: /data/db
+              mountPath: /data/db
       #PVC      
   volumeClaimTemplates:
   - metadata: 
